@@ -1,0 +1,8 @@
+.f1{   /* class selector */
+    background-color: blue;
+    font-size: large;
+}
+#f2{ /* id selector */
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+}   
