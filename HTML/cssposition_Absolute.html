@@ -1,0 +1,25 @@
+<title>CSS Absolute</title>
+<style>
+    div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73AD21;
+    }   
+    div.absolute {
+        position: absolute;
+        top: 50px;
+        left: 150px;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #FF5733;
+    }
+</style>
+<body>
+    <div class="relative">
+        <div class="absolute">
+            this div is positioned absolutely within the relative div.
+        </div>
+        this div is positioned relatively.
+    </div>
+</body>
