@@ -1,0 +1,23 @@
+<title>CSS Text Shadow</title>
+<style>
+    .text {
+        font-size: 24px;
+        margin: 20px;
+    }
+    .shadow1 {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .shadow2 {
+        text-shadow: -2px -2px 3px rgba(255, 0, 0, 0.7);
+    }
+    .shadow3 {
+        text-shadow: 3px 3px 5px rgba(0, 0, 255, 0.6), -3px -3px 4px rgba(0, 255, 0, 0.6);
+    }
+    .shadow4 {
+        text-shadow: none;
+    }
+</style>
+<div class="text shadow1">This text has a subtle shadow.</div>
+<div class="text shadow2">This text has a red shadow above and to the left.</div>
+<div class="text shadow3">This text has multiple colored shadows.</div>
+<div class="text shadow4">This text has no shadow.</div>

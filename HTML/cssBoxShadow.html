@@ -1,0 +1,25 @@
+<title>CSS Box Shadow</title>
+<style>
+    .box {
+        width: 200px;
+        height: 100px;
+        border: 10px solid black;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        margin: 20px;
+    }
+</style>
+<div class="box">
+    This box has a shadow.
+</div>
+<div class="box" style="box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.5);">
+    This box has an inset shadow.
+</div>
+<div class="box" style="box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5);">
+    This box has a blue glow shadow.
+</div>
+<div class="box" style="box-shadow: 10px 10px 20px 0 rgba(255, 0, 0, 0.5), -10px -10px 20px 0 rgba(0, 255, 0, 0.5);">
+    This box has multiple shadows.
+</div>
+<div class="box" style="box-shadow: none;">
+    This box has no shadow.
+</div>
