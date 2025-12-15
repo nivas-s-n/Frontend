@@ -1,0 +1,48 @@
+<!--
+   flex-direction
+   flex-wrap
+   flex-flow
+   justify-content
+      -center
+      -flex-start
+      -flext-end
+      -space-between
+      -space-arount
+      -space-evenly
+   align-items
+       -center
+       -flex-start
+       -flex-end
+       -baseline
+       -stretch
+       -normal
+   align-content
+-->
+   <title>CSS Flex</title>
+<style>
+    .flex-container {
+         display: flex;
+        background-color: aqua;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap ; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-wrap: nowrap; */
+        /* flex-flow: column-reverse; */
+        /* justify-content: center; */
+        justify-content: flex-start;
+    }
+    .flex-container>div {
+        background-color: #2196F3;
+        color: white;
+        margin: 10px;
+        padding: 25px;
+        font-size: 25px;
+        text-align: center;
+    }
+</style>
+<div class="flex-container">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</div>
