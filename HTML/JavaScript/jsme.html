@@ -1,0 +1,84 @@
+<script>
+    let hotel, dish, price, qty, total_bill, proceed;
+    alert("Welcome to Swiggy");
+    alert("Available Hotel\n-------------\n1.Buhari\n2.A2B\n3.Saravana Bhavan\n4.Udupi Ruchi");
+    hotel = parseInt(prompt("Enter Your Choice : "));
+    switch (hotel) {
+        case 1: {
+            buhari();
+            break;
+        }
+        case 2: {
+            a2b();
+            break;
+        }
+        case 3: {
+            sb();
+            break;
+        }
+        case 4: {
+            ur();
+            break;
+        }
+        default: {
+            alert("Invalid Input from user")
+        }
+            function buhari() {
+                alert("\t\t\t\Greeting From Buhari\nSelect Your Dish\n---------------\n1.chicken Biryani\n2.Mutton Biryani\n3.Chicken-65");
+                dish = parseInt(prompt("Choose your Dish"));
+                if (dish == 1) {
+                    price = 250;
+                    alert("Chicken Biryani Selected\nPrice of Chicken Biryani is " + price);
+                    quantity();
+                }
+            }
+            function quantity() {
+                while (true) {
+                    qty = Number(prompt("Enter Quantity : "));
+                    if (qty > 0) {
+                        total_bill = price * qty;
+                        alert("Total Bill is " + total_bill);
+                        payment();
+                        break;
+                    }
+                    else {
+                        alert("Quantity should be at least One");
+                    }
+                }
+            }
+            function payment() {
+                alert("Want to Continue\n1.Yes\n2.No");
+                proceed = parseInt(prompt("For Continue Press 1 else Press 2 : "));
+                if (proceed == 1) {
+                    alert("Select Payment Method")
+                    pm = parseInt(prompt("1.Pay On Delivery\n2.UPI"));
+                    switch (pm) {
+                        case 1: {
+                            alert("---------Redirecting to POD-------")
+                            alert("Pay on Delivery Selected");
+                            alert("Total Amount to be Paid : " + total_bill);
+                            otp();
+                            break;
+                        }
+                    }
+                }
+            }
+            function otp() {
+                while (true) {
+                    let sys_otp = Math.floor(Math.random() * 9000) + 1000;
+                    alert("OTP is : " + sys_otp);
+                    let user_otp = parseInt(prompt("Enter OTP : "));
+                    if (sys_otp == user_otp) {
+                        alert("OTP Verified Successfully");
+                        alert("Order Placed\nFood is being prepared");
+                        break;
+                    }
+                    else {
+                        alert("Invalid OTP, TRY AGAIN")
+                    }
+
+                }
+
+            }
+    }
+</script>
