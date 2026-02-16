@@ -1,0 +1,27 @@
+<script>
+    var mark =prompt("Enter Your Mark : ");
+    if (mark <= 100 && mark >= 0) {
+        if (mark >= 90 && mark <= 100) {
+            document.write("A Grade");
+        }
+        else if (mark >= 80 && mark <= 89) {
+            document.write("B Grade");
+        }
+        else if (mark >= 70 && mark <= 79) {
+            document.write("C Grade");
+        }
+        else if (mark >= 60 && mark <= 69) {
+            document.write("D Grade");
+        }
+        else if (mark >= 50 && mark <= 59) {
+            document.write("E Grade");
+        }
+        else {
+            document.write("Fail");
+        }
+    }
+    else{
+        document.write("Marks Cannot be -ve, not exceeds 100 and should be a Numerical Value");
+    }
+
+</script>
