@@ -1,0 +1,21 @@
+<!--focusin and focusout-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function changeColor() {
+            document.getElementById("txt").style.backgroundColor = "lightblue";
+        }
+        function changeBack() {
+            document.getElementById("txt").style.backgroundColor = "green";
+        }
+    </script>
+</head>
+<body>
+
+    <input type="text" id="txt" onfocusin="changeColor()" onfocusout="changeBack()" 
+    placeholder="Click and leave"/> 
+    <!--focusin and focusout are similar to onfocus and onblur, 
+    but they also work when the user clicks inside the input field.-->
+</body>
+</html>
