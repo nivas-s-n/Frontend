@@ -1,0 +1,13 @@
+<script>
+//onblur color changes when the focus is lost
+function myfun(){
+    let t1=document.getElementById("t1").value;
+    document.getElementById("d1").innerHTML=t1;
+}
+</script>
+<body>
+    <form>
+        <input type="text" id="t1" onblur="myfun()">
+        <p id="d1"></p>
+    </form>
+</body>

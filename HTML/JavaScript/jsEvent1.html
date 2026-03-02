@@ -1,0 +1,14 @@
+<body>
+    <select id="s1" onchange="myfun()">
+        <option value="welcome">welcome</option>
+        <option value="hello">hello</option>
+        <option value="hi">hi</option>
+    </select>
+    <p id="d1"></p>
+    <script>
+        function myfun() {
+            let s1 = document.getElementById("s1").value
+            document.getElementById("d1").innerHTML = s1;
+        }
+    </script>
+</body>
