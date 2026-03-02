@@ -1,0 +1,15 @@
+<body>
+    <!-- // The getElementsByName() method returns a collection of all elements in the document 
+     with the specified name.
+    // The name attribute is used to reference elements in a JavaScript, or to reference form\
+    // elements after a form is submitted. -->
+    <input type="text" name="username" value="JohnDoe">
+    <input type="text" name="username" value="JaneDoe">
+    <script>
+        const elements = document.getElementsByName("username");
+        console.log(elements);
+        for (let i = 0; i < elements.length; i++) {
+            console.log(elements[i].value);
+        }
+    </script>
+</body>
