@@ -1,0 +1,24 @@
+<!-- queryselector is a method in JavaScript that allows you to select the
+  first element that matches a specified CSS selector. 
+  It is a powerful and flexible way to access elements in the DOM (Document Object Model).
+The syntax for using querySelector is as follows:
+```javascriptelement = document.querySelector(selector);
+```
+Where `selector` is a string that represents a CSS selector. This can be an element type,
+ class, ID, or any valid CSS selector. 
+For example, if you want to select the first element with the class "container",
+ you can use:
+```javascript
+const element = document.querySelector(".container");
+console.log(element); -->
+
+<body>
+    <div class="container">FirstDiv</div>
+    <div class="container">SecondDiv</div>
+    <div>ThirdDiv</div>
+    <script>
+        const element = document.querySelector(".container");
+        console.log(element);
+        console.log(element.innerText);
+    </script>
+</body>
