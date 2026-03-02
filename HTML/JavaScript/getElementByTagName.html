@@ -1,0 +1,15 @@
+<body>
+    <!-- getElementByTagName() method returns a collection of all elements in the
+     document with the specified tag name, as an HTMLCollection object.
+     -->
+    <div>FirstDiv</div>
+    <div>SecondDiv</div>
+    <p>ThirdDiv</p>
+    <script>
+        const elements = document.getElementsByTagName("div");
+        console.log(elements);
+        for (let i = 0; i < elements.length; i++) {
+            console.log(elements[i].innerText);
+        }
+    </script>
+</body>
