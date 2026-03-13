@@ -1,0 +1,24 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script> only fadeOut use this 
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("#div1").fadeOut(5000);
+        })
+    })
+</script>
+<button type="button">FadeOut</button>
+<div id="div1" style="width: 80px;height: 80px;background-color: red;"></div>  -->
+
+<script>
+    $(document).ready(function () {
+        $("#fi").click(function () {
+            $("div").fadeIn(5000);
+        })
+        $("#fo").click(function () {
+            $("div").fadeOut(5000);
+        })
+    })
+</script>
+<button type="button" id="fi">Fade In</button>
+<button type="button" id="fo">Fade Out</button>
+<div style="width: 80px; height: 80px; background-color: blueviolet;"></div>
