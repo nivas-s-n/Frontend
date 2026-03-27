@@ -57,7 +57,7 @@ r1.render(<Mylist />)*/
 
 
 // Conditional Rendering using if else 
-const Cond = () => {
+/*const Cond = () => {
   const age = parseInt(prompt("Enter Your Age : "))
   let op
   if (age >= 0) {
@@ -80,7 +80,7 @@ const Cond = () => {
   )
 }
 const r1 = ReactDOM.createRoot(document.getElementById('root'))
-r1.render(<Cond />)
+r1.render(<Cond />)*/
 
 // same using ternary operator
 /*const Cond1 = () => {
@@ -99,3 +99,124 @@ r1.render(<Cond />)
 const r1 = ReactDOM.createRoot(document.getElementById("root"))
 r1.render(<Cond1 />)*/
 
+
+// Conditional Rendering   
+/*const x = 50;
+let text = "";
+if (x > 10) {
+  text = `x is greater than ${x}`
+}
+else {
+  text = `x is less than ${x}`
+}
+const MyElem = () => {
+  return (
+    <h1>{text}</h1>
+  )
+}
+const r1 = ReactDOM.createRoot(document.getElementById("root"));
+r1.render(<MyElem />)*/
+
+//function Component 
+/*function Sample(){
+  return (
+    <div>
+      <h1>This is Function Component</h1>
+    </div>
+  )
+}
+const r1=ReactDOM.createRoot(document.getElementById("root"))
+r1.render(<Sample/>)*/
+
+
+//Class Component 
+/*class Sample extends React.Component {
+  render() {
+    return (
+      <h1>This is Class Component</h1>
+    )
+  }
+}
+const r1 = ReactDOM.createRoot(document.getElementById("root"))
+r1.render(<Sample />)*/
+
+
+//Another Function Component with name and age
+/*function Greetings() {
+  const name = "Nivas";
+  const age = 24;
+  return (
+    <>
+      <h1>Hello,{name}</h1>
+      <p>Your Age:{age}</p>
+    </>
+  )
+}
+const r1 = ReactDOM.createRoot(document.getElementById("root"))
+r1.render(<Greetings />)*/
+
+
+// Using Events (onclick)
+/*function SimpleButton() {
+  function handleClick() {
+    alert("Button Clicked")
+  }
+  return (
+    <button onClick={(handleClick)}>Click Me</button>
+  )
+}
+const r1 = ReactDOM.createRoot(document.getElementById("root"))
+r1.render(<SimpleButton />)*/
+
+
+//Using Props 
+/*function Welcome(props) {
+  return (
+    <>
+      <h1>Hello, {props.name}</h1>
+      <p>Your Age is : {props.age}</p>
+    </>
+  )
+}
+const r1 = ReactDOM.createRoot(document.getElementById("root"))
+r1.render(<Welcome name="Nivas" age={24} />)
+*/
+
+
+//Component in Component  
+/*function UserInfo(props) {
+  return (
+    <>
+      <h3>UserName : {props.name}</h3>
+      <p>Age : {props.age}</p>
+      <UserProfile />
+    </>
+  )
+}
+function UserProfile() {
+  return (
+    <h1>This is UserProfile</h1>
+  )
+}
+const r1 = ReactDOM.createRoot(document.getElementById("root"))
+r1.render(<UserInfo name="Nivas" age="24" />)*/
+
+
+// Style in React (Using External, Internal and Inline CSS)
+import './index.css' //External CSS
+function Sample() {
+
+  // Internal CSS
+  const headingStyle = {
+    color: "blue"
+  }
+
+  return (
+    <>
+      <h1 style={{ color: "pink" }}>Heading 1</h1> {/*Inline CSS*/}
+      <h2 style={headingStyle}>Heading 2</h2>
+    </>
+  )
+}
+const r1 = ReactDOM.createRoot(document.getElementById("root"))
+r1.render(<Sample />)
